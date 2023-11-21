@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Uppgift JS</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <p id="array"></p>
+    <p id="sort"></p>
+
+    <form id= "myForm" action="../html/actionpage.html" method="GET" onsubmit="validateForm()">
+        <div>
+            <label for="username">Username</label>
+            <input id="username" name="name" type="text">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" name="" type="text">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" minlength="6">
+        </div>
+        <div>
+            <label for="verpassword">Verify password</label>
+            <input id="verpassword" name="password" type="password" minlength="6">
+        </div>
+        <div>
+            <label for="checkbox">Terms & Conditions</label>
+            <input type="checkbox" id="checkbox" name="terms" onclick="validateCheckbox()">
+        </div>
+        <button onclick="validateEmail(), validateCheckbox(), validateForm()" type="button">Submit</button>
+    </form>
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

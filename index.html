@@ -12,7 +12,7 @@
     <p id="array"></p>
     <p id="sort"></p>
 
-    <form id= "myForm" action="../html/actionpage.html" method="GET" onsubmit="validateForm()">
+    <form id= "myForm" action="./html/actionpage.html" method="GET" onsubmit="validateForm()">
         <div>
             <label for="username">Username</label>
             <input id="username" name="name" type="text">
@@ -33,9 +33,8 @@
             <label for="checkbox">Terms & Conditions</label>
             <input type="checkbox" id="checkbox" name="terms" onclick="validateCheckbox()">
         </div>
-        <button onclick="validateEmail(), validateCheckbox(), validateForm()" type="button">Submit</button>
+        <button onclick="validateEmail(), validateCheckbox(), validateForm()" type="submit">Submit</button>
     </form>
-
 
     <script src="./js/script.js"></script>
 
